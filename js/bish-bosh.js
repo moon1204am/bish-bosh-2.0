@@ -18,22 +18,30 @@ function onSubmit(event) {
         alert("Number can't be negative or 0");
     } else {
         if(list.hasChildNodes()) {
-            const listItems = document.querySelectorAll("#listResult li");
-            listItems.forEach(listItem => {
-                listItem.parentNode.removeChild(listItem);
-            });
+            clear();
         }
         result.classList.remove("d-none");
-        let arrayResult = bishbosh(nr.value, bish.value, bosh.value);
-     
-        arrayResult.forEach((number, index) => {
-        var li = document.createElement("li");
-        li.textContent = `${number}`;
-        fragList.appendChild(li);
-        });
-        list.appendChild(fragList);
+        getResult();
     }
     form.reset();
+}
+
+function getResult() {
+    let arrayResult = bishbosh(nr.value, bish.value, bosh.value);
+     
+    arrayResult.forEach((number, index) => {
+        let li = document.createElement("li");
+        li.textContent = `${index + 1} ${number}`;
+        fragList.appendChild(li);
+    });
+    list.appendChild(fragList);
+}
+
+function clear() {
+    const listItems = document.querySelectorAll("#listResult li");
+    listItems.forEach(listItem => {
+        listItem.parentNode.removeChild(listItem);
+    });
 }
 
 function bishbosh(nr, bish, bosh) {
