@@ -26,6 +26,10 @@ footer {
     background-color: #b6b1b1;
 }
 
+footer p {
+    color: #fff;
+}
+
 title {
     display: block;
     color: #fff;
@@ -33,6 +37,10 @@ title {
 
  #listResult {
     border: solid 1px #b7b7b7;
+    margin: 0px 400px;
+    border-radius: 14px;
+    background-color: #fff;
+
  }
 
  #bishBoshResult {

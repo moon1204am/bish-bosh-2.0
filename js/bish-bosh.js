@@ -29,9 +29,9 @@ function onSubmit(event) {
 function getResult() {
     let arrayResult = bishbosh(nr.value, bish.value, bosh.value);
      
-    arrayResult.forEach((number, index) => {
+    arrayResult.forEach((number) => {
         let li = document.createElement("li");
-        li.textContent = `${index + 1} ${number}`;
+        li.textContent = `${number}`;
         fragList.appendChild(li);
     });
     list.appendChild(fragList);
