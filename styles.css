@@ -1,0 +1,45 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #f0d9da;
+}
+
+header {
+    background-color: #b7b7b7;
+}
+
+ nav .navbar-nav a {
+    color: #f0d9da !important;
+}
+
+h1, h5 {
+    color:#777373;
+}
+
+p {
+    color: #5c5858;
+}
+
+footer {
+    margin: 3em 0;
+    padding: 1em;
+    background-color: #b6b1b1;
+}
+
+title {
+    display: block;
+    color: #fff;
+}
+
+ #listResult {
+    border: solid 1px #b7b7b7;
+ }
+
+ #bishBoshResult {
+    color: #858585;
+ }
+
+ .main-content {
+    margin-top: 100px;
+    padding: 0 100px;
+ }

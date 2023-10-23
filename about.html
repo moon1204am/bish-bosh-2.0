@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="styles.css" type="text/css" rel="stylesheet">
+    <title>Bish Bosh About</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">Bish Bosh 2.0</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav">
+                        <a class="nav-link" href="index.html">Home</a>
+                        <a class="nav-link active" aria-current="page" href="#">About</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <article class="container pt-3 mt-4">
+            <div>
+                <h1 >Bish Bosh</h1>
+                <p>
+                    Bish-Bosh lists all numbers between 1 and n, but with some exceptions: If the number is evenly divisible
+                    with a number chosen by the user, 'Bish' is listed instead of the number. If the number is evenly divisible by another number chosen by the user, 'Bosh' is listed instead
+                    the number. If the number is evenly divisible by both chosen numbers, "Bish-Bosh" is written instead of the number.
+                </p>
+                <div class="mt-4">
+                    <h5>
+                        Example result when n is 15, Bish is 3 and Bosh is 4
+                    </h5>
+                    <p>
+                        1, 2, Bish, Bosh, 5, Bish, 7, Bosh, Bish, 10, 11, Bish-Bosh, 13, 14, Bish
+                    </p>
+                </div>
+                
+            </div>
+        </article>
+    </main>
+    <footer>
+        <p class="text-center">
+            &copy; 2023 Maya
+        </p>
+    </footer>
+    <script src="js/bish-bosh.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
